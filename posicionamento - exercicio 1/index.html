@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bikcraft</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <!-- título e navbar -->
+  <img src="/img/bikcraft.svg" alt="">
+  <div class="menu">
+    <button on onClick="handleClickSobre()" class=" action1">Sobre</button>
+    <button onClick="handleClickProdutos()" class=" action2">Produtos</button>
+    <button onClick="handleClickLojas()" class=" action3">Lojas</button>
+    <button onClick="handleClickContato()" class=" action4">Contato</button>
+  </div>
+  <!-- corpo do site -->
+  <div class="conteudo">
+    
+    <div class="introducao">
+      <span class="detalhe"></span>
+      <h1>Bicicletas Feitas a Mão</h2>
+      <p>A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios da marca.</p>
+      <button onClick="handleClickVerMais()" class="button action5">Ver mais</button>
+    </div>
+
+    <img onMouseLeave="decreaseImage()" onMouseEnter="amplifyImage()" class="amplify" src="/img/bicicleta.jpg" alt="">
+    
+    <h2 class="subtitulo">Vantagens Bikcraft</h2>
+    
+    <div class="vantagens">
+      <div class="vantagens-item">
+        <img src="/img/bike_red.svg" alt="">
+        <h3>Motor Elétrico</h3>
+        <p>Permite você viajar distâncias inimaginaveis com a sua bike.</p>
+      </div>
+      <div class="vantagens-item">
+        <img src="/img/speed_red.svg" alt="">
+        <h3>40 km/h</h3>
+        <p>A mais rápida bicicleta elétrica disponível hoje no mercado.</p>
+      </div>
+      <div class="vantagens-item">
+        <img src="/img/bike_red.svg" alt="">
+        <h3>Rastreador</h3>
+        <p>Rastreador e sistema anti-furto para garantir o seu sossego.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="rodape">
+    <p>Bikcraft. Alguns Direitos Reservados.</p>
+  </div>
+
+  <script src="/script.js"></script>
+
+</body>
+
+</html>
